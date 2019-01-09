@@ -1,0 +1,4 @@
+class Detail < ApplicationRecord
+    
+    
+end
