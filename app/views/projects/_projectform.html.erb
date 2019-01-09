@@ -1,32 +1,50 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="well">
-                <p>
-                    <%= form_for @project do |f| %>
+        <div class="col-md-12">
+           
+             <p>
+                <%= form_for(@project, :html => {class: "form-horizontal", role: "form"}) do |f| %>
+              
+               <div class="form-group">
+                 <div class="control-label col-md-2">
+                    <%= f.label :company, class: "white" %> 
+                 </div>
+                 <div class="col-md-8">
+                   <%= f.text_field :company, class: 'form-control', placeholder: "Name of company worked with", autofocus: true %>
+                 </div>
+               </div>
     
-                    <p>
-                        <%= f.label :company %> <br />
-                        <%= f.text_field :company %>
-                    </p>
-                    
-                    <p>
-                        <%= f.label :title %> <br />
-                        <%= f.text_field :title %>
-                    </p>
-                    
-                     <p>
-                        <%= f.label :description %> <br />
-                        <%= f.text_area :description %>
-                    </p>
-                    
-                    <p>
-                        <%= f.submit %>
-                    </p>
-                    
-                <% end %>
-                </p>
-            </div>
+               <div class="form-group">
+                 <div class="control-label col-md-2">
+                    <%= f.label :title, class: "white" %> 
+                 </div>
+                 <div class="col-md-8">
+                   <%= f.text_field :title, class: 'form-control', placeholder: "position held", autofocus: true %>
+                 </div>
+               </div>
+    
+              
+              <div class="form-group">
+                 <div class="control-label col-md-2">
+                    <%= f.label :description, class: "white" %> 
+                 </div>
+                 <div class="col-md-8">
+                   <%= f.text_area :description, rows: 5, class: 'form-control', placeholder: "Add project description" %>
+                 </div>
+               </div>
+              
+              
+              
+              <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                  <%= f.submit class: "btn btn-success" %> 
+                  <%= link_to "Back to Index", projects_path, class: "btn btn-warning" %>
+                </div>
+              </div>
+            
+            <% end %>
+         </p>
+           
         </div>
     </div>
 </div>

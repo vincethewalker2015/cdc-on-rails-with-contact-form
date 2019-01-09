@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CdcOnRails</title>
+    <title>CDC</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,11 +9,8 @@
   </head>
 
   <body>
-    <% flash.each do |name, msg| %>
-      <ul>
-        <li><%= msg %></li>
-      </ul>
-    <% end %>
+    <%= render 'layouts/navbar' %>
+   <%= render "layouts/flash" %>
     <%= yield %>
   </body>
   

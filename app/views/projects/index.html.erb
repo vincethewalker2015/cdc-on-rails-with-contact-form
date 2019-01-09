@@ -1,1 +1,21 @@
-<h2 align="center">Project Index</h2>
+<div class="container">
+    <h2 align="center" class="white">Project Index</h2>
+    
+    <div class="row">
+        <div align="center">
+           
+           <% @projects.each do |project| %>
+               <div class="white">
+                   <h3>Company<%= project.company %></h3>
+                   <p>Title<%= project.title %></p>
+                   <p>Description<%= project.description %></p><br />
+                   <p><%= link_to "Edit", edit_project_path(project), class: "btn btn-warning" %>
+                      <%= link_to "View", project_path(project), class: "btn btn-primary"  %>
+                      <%= link_to "Delete", project_path(project), method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-danger" %>
+                  </p>
+                  <br />
+               <div/>
+            <% end %>
+        </div>
+    </div>
+</div>

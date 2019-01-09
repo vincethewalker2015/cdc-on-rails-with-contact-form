@@ -1,2 +1,54 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.portfolio, nav, #header {
+    background-image: asset-url("background.png");
+    background-size: cover;
+}
+
+.white {
+    color: #fff;
+}
+
+/* NAVBAR */
+
+.nav, li, a{
+    color: #fff;
+   
+}
+.nav > li > a:hover {
+     background-color: transparent;
+    text-decoration: none;
+}
+
+.page-scroll {
+    
+}
+
+.navbar-toggle, a:hover {
+    color: #fff;
+}
+
+/*----------------------- HOME PAGE -------------------------------*/
+
+/* index block */
+
+.index-block {
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.portfolio-title {
+   
+}
+
+
+/* button */
+
+.btn-default {
+    background-color: transparent;
+    color: #fff;
+    margin-bottom: 5px;
+}
