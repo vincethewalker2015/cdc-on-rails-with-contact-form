@@ -1,7 +1,8 @@
 class PagesController < ApplicationController 
    
    def home
-       @projects = Project.all
+      @details = Detail.all
+      @projects = Project.all
    end
     
 end
