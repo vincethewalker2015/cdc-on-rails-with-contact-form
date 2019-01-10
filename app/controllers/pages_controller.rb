@@ -4,5 +4,7 @@ class PagesController < ApplicationController
       @details = Detail.all
       @projects = Project.all
    end
+   
+   
     
 end

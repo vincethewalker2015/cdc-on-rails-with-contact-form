@@ -1,7 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.portfolio, nav, #header {
+#portfolio, #nav, #header, #skills, .blue, #contact {
     background-image: asset-url("background.png");
     background-size: cover;
 }
@@ -38,6 +38,10 @@
     border-radius: 5px;
     margin-left: 10px;
     margin-right: 10px;
+    
+}
+.index-block a:hover {
+    text-decoration: none !important;
 }
 
 .portfolio-title {
