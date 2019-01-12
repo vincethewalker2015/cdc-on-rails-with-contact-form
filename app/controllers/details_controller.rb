@@ -12,7 +12,7 @@ class DetailsController < ApplicationController
    def create
       @detail = Detail.new(detail_params)
       if @detail.save
-      flash[:success] = "Project has been created"
+      flash[:success] = "Owner details created"
       redirect_to detail_path(@detail) 
       else
       render 'new'
@@ -30,8 +30,8 @@ class DetailsController < ApplicationController
    def update
       @detail = Detail.find(params[:id])
       if @detail.update(detail_params)
-         flash.now[:success] = "Project has been updated"
-         redirect_to project_path(@project)
+         flash.now[:success] = "Details updated"
+         redirect_to detail_path(@detail)
       else
          render 'edit'
       end
@@ -40,6 +40,6 @@ class DetailsController < ApplicationController
    private
    
    def detail_params
-      params.require(:detail).permit(:name, :description)
+      params.require(:detail).permit(:name, :description, :picture)
    end 
 end

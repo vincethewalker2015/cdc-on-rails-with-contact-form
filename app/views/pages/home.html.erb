@@ -27,12 +27,13 @@
       <hr>
     </div>
     <div class="row">
-      <div class="col-md-12 text-center"><img src="" class="img-responsive"><p>Curtis Walker - Director</p></div>
-      <div class="col-md-8 col-md-offset-2">
+      <div class=""></div>
+      <div class="col-md-8 col-md-offset-2 text-center"><p>Curtis Walker - Director</p>
         <div class="about-text">
           	<% @details.each do |detail| %>
-               <div class="">
-                   <h3><%= detail.name %></h3>
+               <div class="col-md-12 text-center">
+                   <p><%= image_tag detail.picture.url if detail.picture?  %></p>
+                   <p></p>
                    <p><%= detail.description %></p><br />
                   <br />
                  </div>
