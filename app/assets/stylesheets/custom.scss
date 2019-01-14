@@ -29,6 +29,13 @@
     color: #fff;
 }
 
+/* Navbar color change */
+.navbar-fixed-top.scrolled {
+  background-image: asset-url("background-sml.png");
+  transition: background-color 400ms linear;
+  color: #fff;
+}
+
 /*----------------------- HOME PAGE -------------------------------*/
 
 /* index block */
