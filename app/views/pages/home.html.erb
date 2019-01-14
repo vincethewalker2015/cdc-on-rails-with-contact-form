@@ -23,17 +23,17 @@
 <div id="about">
   <div class="container">
     <div class="section-title text-center center">
-      <h2>About CDC</h2>
-      <hr>
+      
     </div>
     <div class="row">
       <div class=""></div>
-      <div class="col-md-8 col-md-offset-2 text-center"><p>Curtis Walker - Director</p>
+      <div class="col-md-8 col-md-offset-2 text-center"><p></p>
         <div class="about-text">
           	<% @details.each do |detail| %>
                <div class="col-md-12 text-center">
+                   <h2><%= detail.name %></h2> <br />
                    <p><%= image_tag detail.picture.url if detail.picture?  %></p>
-                   <p></p>
+                   <p>Curtis Walker - Director</p>
                    <p><%= detail.description %></p><br />
                   <br />
                  </div>

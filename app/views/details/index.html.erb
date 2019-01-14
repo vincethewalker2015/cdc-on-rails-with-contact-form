@@ -1,13 +1,15 @@
 <div class="container">
-    <h2 align="center" class="">Project Index</h2>
+    <h2 align="center" class="">Company Details</h2>
     
-    <div class="row">
+    <div class="row pages">
         <div align="center">
            <% @details.each do |detail| %>
                <div class="">
                    <h3><%= detail.name %></h3>
+                   <p><%= image_tag detail.picture.url if detail.picture?  %></p>
                    <p>Description<%= detail.description %></p><br />
-                   <p><%= link_to "Edit", edit_detail_path(detail), class: "btn btn-warning" %>
+                   <p><%= link_to "Back To Main Page", root_path, class: "btn btn-success" %>
+                      <%= link_to "Edit", edit_detail_path(detail), class: "btn btn-warning" %>
                       <%= link_to "View", detail_path(detail), class: "btn btn-primary"  %>
                       <%= link_to "Delete", detail_path(detail), method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-danger" %>
                   </p>

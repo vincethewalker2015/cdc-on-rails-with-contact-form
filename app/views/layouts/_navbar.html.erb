@@ -3,7 +3,7 @@
   <nav class="navbar navbar-custom navbar-fixed-top">
       <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"><i class="fa fa-bars"></i> </button>
         <%= link_to "CDC", root_path, class: "navbar-brand page-scroll white" %> </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -11,8 +11,8 @@
           <ul class="nav navbar-nav">
             <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
             <li class="hidden"><a href="#page-top"></a> </li>
-            <li> <a class="page-scroll" href="#about">About</a> </li>
-            <li> <a class="page-scroll" href="#skills">Skills</a> </li>
+            <li> <a class="page-scroll" href="#about">About CDC</a> </li>
+            <li><%= link_to "Edit Company Info", details_path %></li>
             <li> <a class="page-scroll" href="#portfolio">Portfolio</a></li>
             <li><%= link_to "Edit Portfolio", projects_path %></li>
             <li> <a class="page-scroll" href="#resume">Resume</a> </li>
