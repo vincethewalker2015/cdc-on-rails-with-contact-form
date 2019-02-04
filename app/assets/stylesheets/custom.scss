@@ -1,7 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-#portfolio, #nav, #header, #skills, .blue, #contact {
+ #nav, #header, #skills, .blue, #contact {
     background-image: asset-url("background.png");
     background-size: cover;
 }
@@ -42,7 +42,7 @@
 
 .index-block {
     border: 3px solid white;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-left: 10px;
     margin-right: 10px;
     
@@ -86,4 +86,13 @@
 
 .pages {
     margin-top: 80px;
+}
+
+.title-space {
+    padding-top: 50px;
+   
+}
+
+.index-area {
+    border-radius: 10px;
 }

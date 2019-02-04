@@ -1,4 +1,4 @@
-<div class="container">
+
     <div class="well blue white">
       <h2 align="center" class="title-header"><%= @project.company %></h2>
 
@@ -11,17 +11,17 @@
           </p>
           <br />
           
-          <p>
+          <p align="center">
             Project: <%= @project.description %>
           </p>
           <br />
           <p align="center">
             <%= link_to "Edit Project", edit_project_path(@project), class: "btn btn-primary" %>
             <%= link_to "All Projects", projects_path, class: "btn btn-warning" %>
+            <%= link_to "Main Page", root_path, class: "btn btn-success" %>
             <%= link_to "Delete Project", project_path(@project), method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-danger" %>
           </p>
         
       </div>
     </div>
     </div>
-</div>

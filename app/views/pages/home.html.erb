@@ -82,13 +82,13 @@
 <div id="portfolio">
     <div class="container">
         <div class="section-title text-center center">
-            <h2 class="white">CDC Portfolio</h2>
+            <h2>CDC Portfolio</h2>
             <hr>
         </div>
         <div class="row" align="center">
             	<% @projects.each do |project| %>
                     <div class="white">
-                        <div class="index-block">
+                        <div class="index-block blue">
                             <h3><%= link_to project.company, project_path(project) %></h3>
                             <h4> <%= link_to project.title, project_path(project) %></h4>
                             <br />
