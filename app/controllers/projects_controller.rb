@@ -11,10 +11,12 @@ class ProjectsController < ApplicationController
    
    def create
       @project = Project.new(project_params)
+      @project.user = User.first
       if @project.save
       flash[:success] = "Project has been created"
       redirect_to project_path(@project) 
       else
+      flash[:danger] = "Error! Try again!"
       render 'new'
       end
    end

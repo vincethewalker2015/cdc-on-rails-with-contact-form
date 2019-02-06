@@ -16,9 +16,9 @@
           <ul class="nav navbar-nav navbar-right pull-right">
             <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
             <li class="hidden"><a href="#page-top"></a> </li>
-            <li> <a class="page-scroll" href="#about">About CDC</a> </li>
-            <li><%= link_to "Edit Company Info", details_path %></li>
-            <li> <a class="page-scroll" href="#portfolio">Portfolio</a></li>
+            <li><%= link_to "About CDC", root_path(anchor: 'about') %></li>
+            <li><%= link_to "Edit CDC Info", details_path %></li>
+            <li><%= link_to "Portfolio", root_path(anchor: 'portfolio') %></li>
             <li><%= link_to "Edit Portfolio", projects_path %></li>
             <li> <a class="page-scroll" href="#resume">Resume</a> </li>
             <li> <a class="page-scroll" href="#contact">Contact</a> </li>
@@ -27,3 +27,5 @@
     </div>
   </nav>
 </div><br /><br />
+
+<a class="page-scroll" href="#portfolio">Portfolio</a>

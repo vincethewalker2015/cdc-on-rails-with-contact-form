@@ -14,6 +14,7 @@ class UsersController < ApplicationController
       flash[:success] = "User Profile has been created"
       redirect_to user_path(@user) 
       else
+      flash.now[:danger] = "Error! Try again"  
       render 'new'
       end
    end
