@@ -1,7 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
- #nav, #header, #skills, .blue, #contact {
+ #nav, #header, #skills, .blue, #contact, #New {
     background-image: asset-url("background.png");
     background-size: cover;
 }
@@ -29,8 +29,9 @@
     color: #fff;
 }
 
+
 /* Navbar color change */
-.navbar-fixed-top.scrolled {
+.navbar-fixed-top {
   background-image: asset-url("background-sml.png");
   transition: background-color 400ms linear;
   color: #fff;
@@ -96,3 +97,14 @@
 .index-area {
     border-radius: 10px;
 }
+
+/* ---------------NEW USER PAGE------------------------ */
+
+.newform {
+    margin-top: 50px;
+}
+
+ .newFormTitle {
+     margin-top: 140px;
+ }
+
