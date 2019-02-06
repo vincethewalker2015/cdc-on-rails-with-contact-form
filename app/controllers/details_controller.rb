@@ -11,6 +11,7 @@ class DetailsController < ApplicationController
    
    def create
       @detail = Detail.new(detail_params)
+      @detail.user = current_user
       if @detail.save
       flash[:success] = "Owner details created"
       redirect_to detail_path(@detail) 

@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+    <h2 align="center" class="title-header">Log in</h2>
+    <div>
+         <%= form_for(:session, :html => {class: "form-horizontal", role: "form"}, url: login_path) do |f| %>
+    
+               <div class="row">
+                   <div class="form-group">
+                 <div class="control-label col-md-2">
+                    <%= f.label :email, class: "white" %> 
+                 </div>
+                 <div class="col-md-8">
+                   <%= f.text_field :email, class: 'form-control', placeholder: "Please enter your email address", autofocus: true %>
+                 </div>
+               </div>
+    
+              
+              <div class="form-group">
+                 <div class="control-label col-md-2">
+                    <%= f.label :password, class: "white" %> 
+                 </div>
+                 <div class="col-md-8">
+                   <%= f.password_field :password, class: 'form-control', placeholder: "Enter Password" %>
+                 </div>
+               </div>
+              
+              <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                  <%= f.submit "Log in", class: "btn btn-primary" %> 
+                  <%= link_to "Leave Page", root_path, class: "btn btn-success" %>
+                </div>
+              </div>
+               </div>
+            
+            <% end %>
+    </div>
+    
+</div>
+</div>
