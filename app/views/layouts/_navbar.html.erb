@@ -18,18 +18,18 @@
             <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
             <li class="hidden"><a href="#page-top"></a> </li>
             <li><%= link_to "About CDC", root_path(anchor: 'about') %></li>
-            <% if logged_in? || current_user %>
+            <% if logged_in? %>
               <li><%= link_to "Edit CDC Info", details_path %></li>
+              <li><%= link_to "Edit Portfolio", projects_path %></li>
             <% end %>
             <li><%= link_to "Portfolio", root_path(anchor: 'portfolio') %></li>
-            <li><%= link_to "Edit Portfolio", projects_path %></li>
             <li> <a class="page-scroll" href="#resume">Resume</a> </li>
             <li><%= link_to "Contact", root_path(anchor: 'contact') %></li>
-            <%# if current_user %>
-              <li><%= link_to "login", login_path %></li>
-            
+            <% if logged_in? %>
               <li><%= link_to "Log Out", login_path, method: :delete %></li>
-            <%# end %>
+            <% else %>
+              <li><%= link_to "log in", login_path %></li>
+            <% end %>
           </ul>
       </div> <br />
     </div>
