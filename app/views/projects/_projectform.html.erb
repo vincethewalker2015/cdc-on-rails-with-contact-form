@@ -1,4 +1,4 @@
-            <p>
+<div>
                 <%= form_for(@project, :html => {class: "form-horizontal", role: "form"}) do |f| %>
               
                <div class="form-group">
@@ -15,7 +15,7 @@
                     <%= f.label :title, class: "white" %> 
                  </div>
                  <div class="col-md-8">
-                   <%= f.text_field :title, class: 'form-control', placeholder: "position held", autofocus: true %>
+                   <%= f.text_field :title, class: 'form-control', placeholder: "Position held", autofocus: true %>
                  </div>
                </div>
     
@@ -39,4 +39,4 @@
               </div>
             
             <% end %>
-         </p>
+</div>

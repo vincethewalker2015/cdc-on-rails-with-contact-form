@@ -1,9 +1,14 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+
+
+
+/* GENERAL BACKGROUND COLOURS */
  #nav, #header, #skills, .blue, #contact, #New {
     background-image: asset-url("background.png");
-    background-size: cover;
+    /*background-size: cover; */
 }
 
 .white {
@@ -11,6 +16,8 @@
 }
 
 /* NAVBAR */
+
+
 
 .nav, li, a{
     color: #fff;
@@ -31,11 +38,22 @@
 
 
 /* Navbar color change */
+/* Blue background */
 .navbar-fixed-top {
   background-image: asset-url("background-sml.png");
   transition: background-color 400ms linear;
   color: #fff;
 }
+
+/* Transparent Background */
+.navbar-fixed-top-transparent {
+    background: transparent;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    color: #fff;
+}
+
+
 
 /*----------------------- HOME PAGE -------------------------------*/
 
@@ -82,7 +100,7 @@
 /* EDIT SHOW and INDEX PAGES */
 
 .title-header {
-    margin-top: 50px;
+    margin-top: 120px;
 }
 
 .pages {
@@ -107,4 +125,3 @@
  .newFormTitle {
      margin-top: 140px;
  }
-

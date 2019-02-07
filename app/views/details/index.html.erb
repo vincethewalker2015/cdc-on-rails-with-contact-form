@@ -1,7 +1,8 @@
 <div class="container">
+     <div class="row">
+    <%= render 'layouts/flash' %>
     <h2 align="center" class="">Company Details</h2>
-    
-    <div class="row pages">
+    <div class="pages">
         <div align="center">
            <% @details.each do |detail| %>
                <div class="">
@@ -18,5 +19,5 @@
              <% end %>
          </div>
     </div>
-</div>
+     </div>
 </div>

@@ -1,4 +1,8 @@
-<%= render "projects/projecterrors" %>
-<h2 align="center" class="white">Create New Project</h2>
-
-<%= render "projects/projectform" %>
+<div class="container">
+    <div class="row">
+        <%= render "projects/projecterrors" %>
+        <%= render 'layouts/flash' %>
+        <h2 align="center" class="project-form">Add to Portfolio</h2>
+        <%= render "projects/projectform" %>
+    </div>
+</div>
