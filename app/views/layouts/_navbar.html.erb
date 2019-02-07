@@ -11,21 +11,25 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-left">
-            <li><%= link_to "CDC", root_path, class: "navbar-brand page-scroll white" %> </li>
+            <li><%= link_to "CDC", root_path, class: "navbar-brand page-scroll white" %></li>
+            <li><%= link_to current_user.name if logged_in? %></li>
           </ul>
           <ul class="nav navbar-nav navbar-right pull-right">
             <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
             <li class="hidden"><a href="#page-top"></a> </li>
             <li><%= link_to "About CDC", root_path(anchor: 'about') %></li>
-            <li><%= link_to "Edit CDC Info", details_path %></li>
+            <% if logged_in? || current_user %>
+              <li><%= link_to "Edit CDC Info", details_path %></li>
+            <% end %>
             <li><%= link_to "Portfolio", root_path(anchor: 'portfolio') %></li>
             <li><%= link_to "Edit Portfolio", projects_path %></li>
             <li> <a class="page-scroll" href="#resume">Resume</a> </li>
-            <li> <a class="page-scroll" href="#contact">Contact</a> </li>
-            <li><%= link_to "login", login_path %></li>
-            <% if logged_in? %>
-               <li><%= link_to "Log Out", login_path, method: :delete %></li>
-            <% end %>
+            <li><%= link_to "Contact", root_path(anchor: 'contact') %></li>
+            <%# if current_user %>
+              <li><%= link_to "login", login_path %></li>
+            
+              <li><%= link_to "Log Out", login_path, method: :delete %></li>
+            <%# end %>
           </ul>
       </div> <br />
     </div>
