@@ -4,6 +4,7 @@
     <h2 align="center" class="">Company Details</h2>
     <div class="pages">
         <div align="center">
+            <p><%= link_to "Create Profile", new_detail_path, class: "btn btn-primary" %></p>
            <% @details.each do |detail| %>
                <div class="">
                    <h3><%= detail.name %></h3>
