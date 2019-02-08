@@ -19,6 +19,7 @@
             <li class="hidden"><a href="#page-top"></a> </li>
             <li><%= link_to "About CDC", root_path(anchor: 'about') %></li>
             <% if logged_in? %>
+              <li><%= link_to "Add User", new_user_path %></li>
               <li><%= link_to "Edit CDC Info", details_path %></li>
               <li><%= link_to "Edit Portfolio", projects_path %></li>
             <% end %>
