@@ -12,28 +12,35 @@
 }
 
 .white {
-    color: #fff;
+    color: #fff !important;
+}
+
+.white simple_format{
+    color: #fff !important;
 }
 
 /* NAVBAR */
 
 
+.navbar-left {
+    padding-left: 20px;
+}
 
+/* Also works index section */
 .nav, li, a{
-    color: #fff;
+    color: #fff; 
    
 }
 .nav > li > a:hover {
      background-color: transparent;
-    text-decoration: none;
+     text-decoration: none;
 }
 
-.page-scroll {
-    
-}
 
-.navbar-toggle, a:hover {
-    color: #fff;
+
+// Toggle bar
+.navbar .navbar-toggle .icon-bar {
+    background-color: #fff !important;
 }
 
 
@@ -42,7 +49,7 @@
 .navbar-fixed-top {
   background-image: asset-url("background-sml.png");
   transition: background-color 400ms linear;
-  color: #fff;
+  color: #fff; 
 }
 
 /* Transparent Background */

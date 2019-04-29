@@ -1,20 +1,20 @@
 <div class="container">
     <div class="row">
       <%= render 'layouts/flash' %>
-      <div class="well blue white">
+      <div class="well title-header">
       <h2 align="center"><%= @detail.name %></h2>
-      
-   
+
+
       <div class="col-md-10 col-md-offset-1">
-        
-          
+
+
           <p align="center">
             <%= image_tag @detail.picture.url, class: "detail-pic" if @detail.picture? %>
           </p>
           <br />
-          
+
           <p>
-            Project: <%= @detail.description %>
+            <%= simple_format @detail.description %>
           </p>
           <br />
           <p align="center">
@@ -22,13 +22,9 @@
             <%= link_to "Edit your Details", edit_detail_path(@detail), class: "btn btn-warning" %>
             <%= link_to "Delete Your Details", detail_path(@detail), method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-danger" %>
           </p>
-        
+
       </div>
-   
+
     </div>
     </div>
 </div>
-
-
-
-

@@ -5,7 +5,7 @@
 
 <!-- Header -->
 <header>
-  <div id="header">
+  <div id="header" class="trans">
     <div class="intro">
     <div class="container">
       <div class="row">
@@ -22,8 +22,10 @@
 
 <!-- ABOUT SECTION -->
 
-<div id="about">
+
+<div id="about" class="blue">
   <div class="container">
+    <%= render 'layouts/navbar' %>
     <div class="section-title text-center center">
       
     </div>
@@ -36,7 +38,7 @@
                    <h2><%= detail.name %></h2> <br />
                    <p><%= image_tag detail.picture.url if detail.picture?  %></p>
                    <p>Curtis Walker - Director</p>
-                   <p><%= detail.description %></p><br />
+                   <p><%= simple_format detail.description %></p><br />
                   <br />
                  </div>
              <% end %>

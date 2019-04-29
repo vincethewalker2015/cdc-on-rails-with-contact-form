@@ -24,7 +24,6 @@
               <li><%= link_to "Edit Portfolio", projects_path %></li>
             <% end %>
             <li><%= link_to "Portfolio", root_path(anchor: 'portfolio') %></li>
-            <li> <a class="page-scroll" href="#resume">Resume</a> </li>
             <li><%= link_to "Contact", root_path(anchor: 'contact') %></li>
             <% if logged_in? %>
               <li><%= link_to "Log Out", login_path, method: :delete %></li>

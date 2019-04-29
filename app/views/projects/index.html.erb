@@ -12,7 +12,7 @@
                     <% @projects.each do |project| %>
                     <h3 class="white title-space"><%= project.company %></h3>
                     <p class="white"><%= project.title %></p>
-                    <p class="white"><%= project.description %></p><br />
+                    <p class="white"><%= project.description %> %></p><br />
                     <p><%= link_to "Edit", edit_project_path(project), class: "btn btn-warning" %>
                        <%= link_to "View", project_path(project), class: "btn btn-primary"  %>
                        <%= link_to "Back to Main Page", root_path, class: "btn btn-success"  %>
