@@ -23,19 +23,34 @@
 
 
 .navbar-left {
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 /* Also works index section */
-.nav, li, a{
-    color: #fff; 
-   
-}
-.nav > li > a:hover {
-     background-color: transparent;
-     text-decoration: none;
+.nav, li, a {
+    color: #fff;
+     
+   }
+.nav, li {
+    font-size: 15px;
 }
 
+.nav > li > a:hover {
+//background-color: transparent;
+text-decoration: none;
+border: 2px solid white;
+}
+
+.index-block a:hover {
+    color:white;
+
+}
+
+
+// Main Page set up
+    #about {
+        margin-top: 50px
+    }
 
 
 // Toggle bar
@@ -92,12 +107,16 @@
     color: #fff;
 }
 
+/* Portfolio Section */
+
+
+
 /* Detail section */
 
-.detail-pic {
-    width: 200px;
-    border: 2px solid white;
-    border-radius: 5px;
+.detail-pic img {
+    //width: 200px;
+    border: 1px solid black;
+    border-radius: 15px;
     padding: 2px;
 }
 
@@ -129,3 +148,43 @@
  .newFormTitle {
      margin-top: 140px;
  }
+
+
+
+ /*------------------------Footer Section ------------------------------*/
+
+ #footer {
+    /*	background: url(../img/background-sml.png); */
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        color: #7d8384;
+        padding: 30px 0 25px 0;
+    }
+    #footer p {
+        font-size: 13px;
+    }
+    #footer a {
+        color: #a0a5a5;
+    }
+    #footer a:hover {
+        color: #7bc3d1;
+    }
+
+ 
+ // Social Media
+ #contact .social {
+	margin-top: 60px;
+}
+#contact .social ul li {
+	display: inline-block;
+	margin: 0 20px;
+}
+#contact .social i.fa {
+	font-size: 30px;
+	padding: 4px 5px;
+	color: #fff;
+	transition: all 0.5s;
+}
+#contact .social i.fa:hover {
+    color: #121d1f;
+}

@@ -12,10 +12,13 @@
                     <% @projects.each do |project| %>
                     <h3 class="white title-space"><%= project.company %></h3>
                     <p class="white"><%= project.title %></p>
-                    <p class="white"><%= project.description %> %></p><br />
+                    <div class="white">
+                        <p class><%= simple_format project.description %></p><br />
+                    </div>
                     <p><%= link_to "Edit", edit_project_path(project), class: "btn btn-warning" %>
                        <%= link_to "View", project_path(project), class: "btn btn-primary"  %>
-                       <%= link_to "Back to Main Page", root_path, class: "btn btn-success"  %>
+                       <%= link_to "What the world sees", root_path, class: "btn btn-success"  %>
+                       <%= link_to "View company detail", details_path, class: "btn btn-primary"  %>
                        <%= link_to "Delete", project_path(project), method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-danger" %>
                     </p>
                     <br />
