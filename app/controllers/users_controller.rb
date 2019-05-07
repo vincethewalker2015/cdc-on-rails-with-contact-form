@@ -12,7 +12,7 @@ class UsersController < ApplicationController
       @user = User.new(user_params)
       if @user.save
       session[:user_id] = @user.id
-      flash[:success] = "User Profile has been created"
+      flash.now[:success] = "User Profile has been created"
       redirect_to user_path(@user) 
       else
       flash.now[:danger] = "Error! Try again"  
