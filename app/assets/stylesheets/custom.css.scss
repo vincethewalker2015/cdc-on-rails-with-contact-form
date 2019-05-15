@@ -21,7 +21,9 @@
 
 /* NAVBAR */
 
-
+.nav {
+    margin-top: 5px;
+}
 .navbar-left {
     padding-left: 10px;
 }
@@ -36,9 +38,12 @@
 }
 
 .nav > li > a:hover {
-//background-color: transparent;
+background-color: transparent;
 text-decoration: none;
-border: 2px solid white;
+border: 1px solid white;
+border-radius: 5px;
+color: #fff;
+
 }
 
 .index-block a:hover {

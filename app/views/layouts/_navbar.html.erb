@@ -17,7 +17,7 @@
           <ul class="nav navbar-nav navbar-right">
             <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
             <li class="hidden"><a href="#page-top"></a> </li>
-            <li><%= link_to "About CDC", root_path(anchor: 'about') %></li>
+            <li><%= link_to "About CDC", root_path(anchor: '#about') %></li>
             <% if logged_in? %>
               <li><%= link_to "Add User", new_user_path %></li>
               <li><%= link_to "Edit CDC Info", details_path %></li>

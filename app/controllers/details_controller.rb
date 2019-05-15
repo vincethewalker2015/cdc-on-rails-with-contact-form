@@ -1,5 +1,5 @@
 class DetailsController < ApplicationController
-    before_action :require_user
+    #before_action :require_user
     
    def index
       @details = Detail.all
@@ -41,6 +41,6 @@ class DetailsController < ApplicationController
    private
    
    def detail_params
-      params.require(:detail).permit(:name, :description, :picture)
+      params.require(:detail).permit(:name, :employee_name, :title, :description, :picture)
    end 
 end
