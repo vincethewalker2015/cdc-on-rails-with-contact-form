@@ -24,7 +24,7 @@ gem 'coffee-rails', '~> 4.2'
 # Carrierwave for Image uploads
 gem 'carrierwave', '1.2.2'
 # Use Mini Magick for Image resizing
-gem 'mini_magick', '~> 4.9', '>= 4.9.2'
+gem 'mini_magick', '~> 4.9'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
