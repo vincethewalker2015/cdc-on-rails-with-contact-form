@@ -26,7 +26,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'carrierwave', '2.1.0'
 # Use Mini Magick for Image resizing
 gem 'mini_magick', '~> 4.9'
-
+gem 'ovirt-engine-sdk', '4.3.1'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
