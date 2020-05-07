@@ -59,7 +59,8 @@ end
 
 group :production do
   gem 'pg'
-  gem 'fog', '2.2.0'
+  # gem 'fog', '2.2.0'
+  gem 'fog-core'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
