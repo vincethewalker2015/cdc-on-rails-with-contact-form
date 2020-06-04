@@ -59,7 +59,6 @@ end
 
 group :production do
   gem 'pg'
-  # gem 'fog', '2.2.0'
   gem 'fog-aws'
 end
 
